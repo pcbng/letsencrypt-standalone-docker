@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get install -y python2.7 python-pip
+RUN apt-get install -y python2.7 python-pip libssl-dev
 
 RUN pip install letsencrypt letsencrypt-s3front
 
